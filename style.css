@@ -1,137 +1,62 @@
-/* ---------- Theme tokens ---------- */
-:root {
-    --bg: #fafafa;
-    --text: #222;
-    --brand: #007acc;
-    --brand-hover: #710cfe;
-    --muted: #666;
-    --radius: 16px;
-    --shadow: 0 8px 24px rgba(0,0,0,0.08);
-    --shadow-hover: 0 14px 28px rgba(0,0,0,0.12);
-  }
-  
-  /* ---------- Base ---------- */
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--text);
-    text-align: center;
-  }
-  
-  header {
-    background: #222;
-    color: #fff;
-    padding: 1.5rem 0;
-  }
-  
-  main { padding: 2rem 1rem; }
-  
-  h1 { font-size: 2rem; margin-bottom: 1rem; }
-  
-  /* links */
-  a { color: var(--brand); text-decoration: none; }
-  a:hover { color: var(--brand-hover); text-decoration: underline; }
-  
-  /* ---------- About (narrow, justified) ---------- */
-  #about {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: justify;
-    line-height: 1.6;
-    padding: 2rem 1rem;
-  }
-  
-  #about h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  .profile-pic {
-    width: 150px;          /* adjust size */
-    height: 150px;         /* make width and height equal */
-    object-fit: cover;     /* keeps aspect ratio and fills frame */
-    border-radius: 50%;    /* makes it a perfect circle */
-    display: block;
-    margin: 0 auto 1rem;   /* centers it and adds space below */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* optional subtle shadow */
-  }
-  
-  /* ---------- Projects (bright bg + vertical long cards) ---------- */
-  #projects {
-    background: #f0f4f8;     /* 밝은 배경 */
-    color: var(--text);
-    padding: 3rem 1rem;
-    margin-top: 2rem;
-  }
-  
-  #projects h2 {
-    text-align: center;
-    margin: 0 auto 2rem;
-    letter-spacing: 0.02em;
-  }
-  
-  #projects h2::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 64px;
-    background: linear-gradient(90deg, var(--brand), var(--brand-hover));
-    margin: 12px auto 0;
-    border-radius: 2px;
-  }
-  
-    /* Stack vertically */
-  .projects-list {
-    max-width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-  }
-  .project-card{
-    background: #fff;
-    color: var(--text);
-    border-radius: 14px;
-    box-shadow: var(--shadow);
-    padding: 1.75rem 2rem;
-    text-align: left;
-    transition: transform .15s ease, box-shadow .15s ease;
-  }
-  
-  /* Limit content width and center inside the card */
-  .project-card > *{
-    max-width: 68ch;        /* 읽기 좋은 텍스트 폭 (~55–75ch) */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Safe line-break for long links */
-  .project-card p, .project-card a{
-    overflow-wrap: anywhere;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
-  }
-  
-  .project-card h3 {
-    margin: 0 0 .75rem;
-    color: var(--brand);
-  }
-  
-  .project-card p {
-    margin: 0 0 .75rem;
-    line-height: 1.6;
-    color: var(--muted);
-  }
-  
-  .project-card a {
-    color: var(--brand);
-    font-weight: 500;
-  }
-  .project-card a:hover {
-    color: var(--brand-hover);
-  }
-  
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  padding-top: 70px; /* offset for fixed navbar */
+}
+.navbar {
+}
+.navbar-brand {
+  font-weight: bold;
+  color: black;
+}
+.section {
+  padding: 60px 0;
+}
+.alt {
+  background: #f7f7f7;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-weight: lighter;
+  color:#000000;
+  font-size: 30px;
+} 
+.site-footer {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  color: #7a7a7a;
+}
+.contact-icons {
+  margin-top: 15px;
+  padding: 0;
+}
+
+/* spacing between contact icons */
+.contact-icons li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.contact-icons a {
+  color: #555;
+  font-size: 2rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.contact-icons i.ai {
+  font-size: 1.9rem;   /* Scholar icon size */
+  vertical-align: middle;
+}
+.contact-icons a:hover {
+  color: #007acc;       /* accent color */
+  transform: scale(1.2);
+}

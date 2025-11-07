@@ -3,66 +3,129 @@
 <head>
   <meta charset="utf-8">
   <title>Jiyeong Ha</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+ <!-- Bootstrap -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Academicons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+<!-- my CSS -->
+<link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-  <header>
-    <img src="profile.jpg" alt="Jiyeong Ha" class="profile-pic">
-    <h1 id="myName">Jiyeong Ha</h1>
-    <p>Computational Modeling & Vision Science Researcher</p>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m <strong>Jiyeong Ha</strong> (also known as <strong>"Haji"</strong>). 
-      I’m a Ph.D. candidate in Perception & Cognition at <strong>New York University</strong>,
-      where I study <strong>computational modeling of visual perception</strong>.
-    </p>
-  
-    <p>
-      I’m interested in  how we see the world.
-      Imagine the world as a grid— each patch is perceived differently based on its location, content (i.e. color and orientations), and information from other modalities. 
-      I identify these factors through experiments and build data-driven models to predict perception. 
-    </p>
-  
-    <p>
-      My work lives at the intersection of vision science, machine learning, and data analysis.
-      I love turning complex neural data into something interpretable — uncovering structure in noise, building tools for reproducible research, and connecting human perception to technology.
-    </p>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-  
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Spatial Frequency Maps in Human Visual Cortex</h3>
-        <p>
-          Replicates and extends prior findings on spatial frequency tuning using large-scale fMRI (NSD). Reports systematic bandwidth increases from V1 to higher areas.
-        </p>
-        <p>
-          <a href="https://osf.io/umqkw" target="_blank">Data &amp; Code (OSF)</a> ·
-          <a href="https://github.com/JiyeongHa/Spatial-Frequency-Preference_NSDsyn" target="_blank">GitHub</a>
-        </p>
-      </div>
-  
-      <div class="project-card">
-        <h3>Image-Computable Models of Visual Perception</h3>
-        <p>
-          A framework linking natural image statistics to neural responses with steerable pyramids and regression-based pooling.
-        </p>
-      </div>
-  
-      <div class="project-card">
-        <h3>Mapping Variability in Visual Cortex</h3>
-        <p>
-          Exploring individual differences in visual area surface areas and their relationship to perceptual variability.
-        </p>
-      </div>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="70">
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#top">Jiyeong Ha</a>
     </div>
-  </section>
-  
 
-  <script src="script.js"></script>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Sections ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 text-center">
+        <img src="profile.jpg" alt="Jiyeong Ha" class="img-circle img-responsive center-block" width="180">
+        <h3>Jiyeong Ha</h3>
+        <p>Ph.D. Candidate, New York University</p>
+
+        <!-- 🔽 Contact icons -->
+        <ul class="list-inline contact-icons">
+          <li><a href="mailto:jiyeong.ha@nyu.edu" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="https://github.com/JiyeongHa" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://scholar.google.com/citations?user=Gm0N3eIAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jiyeong-ha" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>
+          I’m interested in how we perceive the world.
+          Imagine the world as a grid—each patch is seen differently based on its location, content 
+          (i.e., color and orientations), and cognition (i.e., attention, memory). 
+          I identify these factors through experiments and build data-driven models to predict perception.
+        </p>
+
+        <p>
+          My research interest lies at the intersection of vision science, machine learning, and data analysis.
+          I love turning complex neural data into something interpretable — uncovering structure in noise,
+          building tools for reproducible research, and connecting human perception to technology.
+        </p>
+        <p>
+          In my free time, I spend time with my cat Shasha (my first foster and the only foster failure).
+          I also foster kittens and cats in need— please reach out if you're interested in fostering!
+        </p>
+      </div>
+
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+
+<section id="projects" class="section alt">
+  <div class="container">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Spatial Frequency Maps in Human Visual Cortex</strong> <a href="https://osf.io/umqkw" target="_blank">OSF</a></li>
+      <li><strong>Image-Computable Models of Visual Perception</strong></li>
+      <li><strong>Mapping Variability in Visual Cortex</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="container">
+    <h2>Publications</h2>
+    <p><strong>Ha, J.</strong>, Broderick, W.F., Kay, K., &amp; Winawer, J. (2025). Spatial Frequency Maps in Human Visual Cortex: A Replication and Extension. <em>BioRxiv.</em></p>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <ul class="fa-ul">
+      <li><i class="fa-li fa fa-envelope"></i><a href="mailto:jiyeong.ha@nyu.edu">jiyeong.ha@nyu.edu</a></li>
+      <li><i class="fa-li fab fa-github"></i><a href="https://github.com/JiyeongHa" target="_blank">github.com/JiyeongHa</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container text-center">
+    <p>&copy; 2025 Jiyeong Ha · Computational Modeling & Vision Science Researcher</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
