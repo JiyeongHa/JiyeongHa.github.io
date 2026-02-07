@@ -1,0 +1,19 @@
+title: Jiyeong Ha
+description: PhD Candidate at NYU · Computational Modeling & Vision Science
+url: "https://jiyeongha.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

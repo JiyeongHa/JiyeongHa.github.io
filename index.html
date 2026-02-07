@@ -1,131 +1,248 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Jiyeong Ha</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
- <!-- Bootstrap -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- Font Awesome -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- Academicons -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
-<!-- my CSS -->
-<link rel="stylesheet" href="style.css">
+---
+layout: home
+title: Home
+---
 
-</head>
-
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="70">
-
-<!-- ===== Navbar ===== -->
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed"
-              data-toggle="collapse" data-target="#navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#top">Jiyeong Ha</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- ===== Sections ===== -->
+<!-- ===== About ===== -->
 <section id="about" class="section">
   <div class="container">
     <div class="row">
-
       <div class="col-md-4 text-center">
         <img src="profile.jpg" alt="Jiyeong Ha" class="img-circle img-responsive center-block" width="180">
         <h3>Jiyeong Ha</h3>
         <p>Ph.D. Candidate, New York University</p>
-
-        <!-- 🔽 Contact icons -->
         <ul class="list-inline contact-icons">
           <li><a href="mailto:jiyeong.ha@nyu.edu" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
           <li><a href="https://github.com/JiyeongHa" target="_blank"><i class="fa-brands fa-github"></i></a></li>
           <li><a href="https://scholar.google.com/citations?user=Gm0N3eIAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/jiyeong-ha" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://linkedin.com/in/jiyeongha" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
       </div>
-
       <div class="col-md-8">
         <h2>About Me</h2>
         <p>
-          I’m interested in how we perceive the world.
-          Imagine the world as a grid—each patch is seen differently based on its location, content 
-          (i.e., color and orientations), and cognition (i.e., attention, memory). 
-          I identify these factors through experiments and build data-driven models to predict perception.
+          I'm a PhD candidate at NYU with 8 years of experience in computational modeling and
+          data analysis of human visual systems. My research involves processing complex 3D
+          anatomical structures from neuroimaging data (including diffusion MRI and 7T functional MRI),
+          requiring expertise in mesh processing, machine learning, statistical modeling, and Python automation.
         </p>
-
         <p>
-          My research interest lies at the intersection of vision science, machine learning, and data analysis.
-          I love turning complex neural data into something interpretable — uncovering structure in noise,
+          I specialize in designing quantitative studies to map human biological systems,
+          translating multidimensional datasets into actionable insights.
+          I love turning complex neural data into something interpretable &mdash; uncovering structure in noise,
           building tools for reproducible research, and connecting human perception to technology.
         </p>
         <p>
           In my free time, I spend time with my cat Shasha (my first foster and the only foster failure).
-          I also foster kittens and cats in need— please reach out if you're interested in fostering!
+          I also foster kittens and cats in need &mdash; please reach out if you're interested in fostering!
         </p>
       </div>
-
-    </div> <!-- row -->
-  </div> <!-- container -->
-</section>
-
-
-<section id="projects" class="section alt">
-  <div class="container">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Spatial Frequency Maps in Human Visual Cortex</strong> <a href="https://osf.io/umqkw" target="_blank">OSF</a></li>
-      <li><strong>Image-Computable Models of Visual Perception</strong></li>
-      <li><strong>Mapping Variability in Visual Cortex</strong></li>
-    </ul>
+    </div>
   </div>
 </section>
 
+<!-- ===== Education ===== -->
+<section id="education" class="section alt">
+  <div class="container">
+    <h2>Education</h2>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>New York University</strong>, PhD in Cognition &amp; Perception</span>
+        <span class="cv-date">2021 &ndash; Present</span>
+      </div>
+      <ul class="cv-details">
+        <li>GPA: 3.9/4.0 | MacCracken Fellow | Expected graduation: Spring 2027</li>
+        <li>Committee: Dr. Jon Winawer (advisor), Dr. Mike Landy, Dr. Eero Simoncelli</li>
+        <li>Relevant Coursework: Computer Vision, Math Tools for Neural Science, Perception, Computational Cognitive Modeling</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>Yonsei University</strong>, MA in Cognitive Neuroscience</span>
+        <span class="cv-date">2016 &ndash; 2018</span>
+      </div>
+      <ul class="cv-details">
+        <li>GPA: 3.8/4.0 | Brain Korea 21+ Scholarship Awardee</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>Chung Ang University</strong>, BA in Psychology</span>
+        <span class="cv-date">2011 &ndash; 2016</span>
+      </div>
+      <ul class="cv-details">
+        <li>GPA: 3.6/4.0 | Cum Laude</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Research Experience ===== -->
+<section id="research" class="section">
+  <div class="container">
+    <h2>Research Experience</h2>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>Co-Lead Researcher: Large-Scale 3D Anatomical Mapping</strong></span>
+        <span class="cv-date">Sep 2023 &ndash; Present</span>
+      </div>
+      <div class="cv-institution">New York University</div>
+      <ul class="cv-details">
+        <li>Performed anatomical mapping and analysis of 3D brain structures (hV4, VO1, VO2) across 362 hemispheres from 181 subjects, creating the largest public dataset of ventral visual areas</li>
+        <li>Verified custom annotation software for 3D anatomical boundaries on cortical surfaces by testing inter-subject and inter-rater reliabilities</li>
+        <li>Performed heritability analysis on 84 twin pairs (MZ/DZ) using ICC and Falconer's index to assess genetic vs. environmental influences on anatomical structure</li>
+        <li>Processed multi-terabyte 7T MRI datasets using automated pipelines for cortical surface reconstruction and alignment (FreeSurfer)</li>
+        <li>Conducted inter-rater reliability analysis using Linear Mixed Effects models to validate boundary consistency across 5 raters</li>
+        <li>Paper in preparation for <em>Journal of Neuroscience</em>; data and code to be released on OSF and GitHub</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>Visiting Scholar: 3D White Matter Tractography Analysis</strong></span>
+        <span class="cv-date">Sep 2022 &ndash; Dec 2022</span>
+      </div>
+      <div class="cv-institution">Stanford University</div>
+      <ul class="cv-details">
+        <li>Led a multi-institutional collaboration to identify spatial patterns of white matter tracts that predict transitions between retinotopic and category-selective visual areas, producing a scientific presentation at OHBM 2023</li>
+        <li>Processed 3D white matter tract terminations from diffusion MRI using Automated Fiber Quantification (pyAFQ) pipeline</li>
+        <li>Analyzed endpoint density distributions across cortical surfaces to identify anatomical boundaries between brain regions</li>
+        <li>Integrated multi-modal neuroimaging data (diffusion MRI and functional MRI) to characterize structure-function relationships</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>Graduate Researcher: Computational Modeling of Human Visual Cortex</strong></span>
+        <span class="cv-date">Sep 2021 &ndash; Present</span>
+      </div>
+      <div class="cv-institution">New York University</div>
+      <ul class="cv-details">
+        <li>Built computational models in PyTorch on large-scale fMRI datasets that predict visual cortex responses based on spatial frequency information, resulting in a first-author <a href="https://doi.org/10.1101/2025.01.21.634150">paper</a></li>
+        <li>Extended the model into image-computable vision framework by incorporating multi-scale, multi-orientation image decomposition (steerable pyramid), resulting in a first-author paper (in prep.)</li>
+        <li>Conducted statistical modeling (bootstrap, cross-validation for model comparison) and simulations to evaluate model reliability</li>
+        <li>Developed scalable data pipelines (Snakemake + Slurm HPC) for end-to-end analysis of multi-terabyte datasets, ensuring reproducibility and efficiency</li>
+        <li>Released open-source code/data on <a href="https://github.com/JiyeongHa/Spatial-Frequency-Preference_NSDsyn">GitHub</a> and <a href="https://osf.io/umqkw/overview">OSF</a></li>
+        <li>Recognized with the $5K NYU Shakrani Summer Research Fellowship and the Elsevier/Vision Research Student Award</li>
+        <li>Communicated findings in 4 talks and 2 posters including scientific conferences (VSS 2023, OHBM 2024)</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-title"><strong>Research Staff: Audio-visual Integration &amp; Color Perception</strong></span>
+        <span class="cv-date">Mar 2018 &ndash; Aug 2021</span>
+      </div>
+      <div class="cv-institution">Center for Neuroscience Imaging Research, South Korea</div>
+      <ul class="cv-details">
+        <li>Led multisensory integration research on how audiovisual inputs (melody and visual motion) are integrated at brain/behavior levels, using fMRI and psychophysics, resulting in 2+ conference presentations and a presenter award</li>
+        <li>Investigated how attention affects color perception, producing a first-author paper and 2+ conference presentations</li>
+        <li>Developed and validated color-balanced visual stimuli in DKL color space through precise display calibration</li>
+        <li>Accurately decoded viewed colors from neural activity using computational models</li>
+        <li>Applied signal processing, machine learning, and statistical modeling (classification, regression, ANOVA) to extract meaningful perceptual patterns from 4D fMRI and behavioral data</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4>Programming</h4>
+        <p><strong>Advanced:</strong> Python, MATLAB, R<br>
+        <strong>Intermediate:</strong> Shell scripting, LaTeX<br>
+        <strong>Basic:</strong> C++, HTML, JavaScript</p>
+      </div>
+      <div class="skill-category">
+        <h4>Data Analysis</h4>
+        <p>Computational modeling, machine learning, deep learning, psychophysics, statistics, neural networks, time-series, image &amp; signal processing, scalable big-data workflows (HPC), Slurm</p>
+      </div>
+      <div class="skill-category">
+        <h4>Software &amp; Tools</h4>
+        <p>PyTorch, scikit-learn, pandas, SciPy, Snakemake, Psychtoolbox, PsychoPy, fMRIprep, Git/GitHub</p>
+      </div>
+      <div class="skill-category">
+        <h4>3D Brain Data Processing</h4>
+        <p>Mesh processing, cortical surface analysis, anatomical boundary delineation, surface area calculation, spatial alignment (FreeSurfer/AFNI/FSL), tractometry</p>
+      </div>
+      <div class="skill-category">
+        <h4>Research</h4>
+        <p>Experimental design, human behavior, vision science, academic writing, scientific communication, data visualization</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Publications ===== -->
 <section id="publications" class="section">
   <div class="container">
     <h2>Publications</h2>
-    <p><strong>Ha, J.</strong>, Broderick, W.F., Kay, K., &amp; Winawer, J. (2025). Spatial Frequency Maps in Human Visual Cortex: A Replication and Extension. <em>BioRxiv.</em></p>
+    <ol class="publications-list" reversed>
+      <li>
+        Qiu, <strong>Ha</strong>, Zhao, Boujaber-Diederichs, Winawer, &amp; Benson (2026).
+        <em>The ventral visual cortex is a transition point between genetic and environmental influences.</em>
+        (in prep., manuscript available upon request)
+      </li>
+      <li>
+        <strong>Ha</strong>, Broderick, Kay, &amp; Winawer (2025).
+        <em>Spatial Frequency Maps in Human Visual Cortex: A Replication and Extension.</em>
+        <a href="https://doi.org/10.1101/2025.01.21.634150">bioRxiv</a>. (under revision at <em>Imaging Neuroscience</em>)
+      </li>
+      <li>
+        <strong>Ha</strong>, Park, Shim, &amp; Hong (2022).
+        <em>Asymmetrical Effect of Spatial Attention on Color Representation in Lateral Geniculate Nucleus and Primary Visual Cortex.</em>
+        (submitted to <em>Journal of Neuroscience</em>, available upon request)
+      </li>
+    </ol>
+
+    <h2 style="margin-top: 30px;">Conference Presentations</h2>
+    <ol class="publications-list" reversed>
+      <li>
+        <strong>Ha</strong>, Broderick, Kay, &amp; Winawer (2024).
+        <em>Spatial Frequency Maps in Human Visual Cortex: A Replication and Extension.</em>
+        Poster at OHBM 2024, Montreal, Canada.
+      </li>
+      <li>
+        <strong>Ha</strong>, Rokem, Kruper, Yeatman, &amp; Winawer (2023).
+        <em>How do white matter terminations change between retinotopic maps and category selectivity regions?</em>
+        Poster at OHBM 2023, Montreal, Canada.
+      </li>
+      <li>
+        <strong>Ha</strong>, Broderick, Kay, &amp; Winawer (2023).
+        <em>Spatial frequency maps in human visual cortex: A replication and extension.</em>
+        Talk at VSS 2023, St. Petersburg, FL.
+      </li>
+      <li>
+        <strong>Ha</strong>, Park, Hong, &amp; Shim (2019).
+        <em>Spatial attention modulates color selectivity in human LGN.</em>
+        Talk at Korean Society for Cognitive &amp; Biological Psychology, Pyeongchang, South Korea.
+      </li>
+      <li>
+        <strong>Ha</strong>, Kim, &amp; Shim (2019).
+        <em>Decoding melodic contours in early visual areas.</em>
+        Poster at SfN 2019, Chicago, IL.
+      </li>
+    </ol>
   </div>
 </section>
 
+<!-- ===== Contact ===== -->
 <section id="contact" class="section alt">
   <div class="container">
     <h2>Contact</h2>
-    <ul class="fa-ul">
+    <ul class="fa-ul contact-list">
       <li><i class="fa-li fa fa-envelope"></i><a href="mailto:jiyeong.ha@nyu.edu">jiyeong.ha@nyu.edu</a></li>
+      <li><i class="fa-li fa fa-phone"></i>929-243-6521</li>
+      <li><i class="fa-li fa fa-location-dot"></i>New York, NY</li>
       <li><i class="fa-li fab fa-github"></i><a href="https://github.com/JiyeongHa" target="_blank">github.com/JiyeongHa</a></li>
+      <li><i class="fa-li fab fa-linkedin"></i><a href="https://linkedin.com/in/jiyeongha" target="_blank">linkedin.com/in/jiyeongha</a></li>
     </ul>
   </div>
 </section>
-
-<footer class="site-footer">
-  <div class="container text-center">
-    <p>&copy; 2025 Jiyeong Ha · Computational Modeling & Vision Science Researcher</p>
-  </div>
-</footer>
-
-<!-- Bootstrap JS + jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-</body>
-</html>
