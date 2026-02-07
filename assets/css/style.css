@@ -1,0 +1,442 @@
+/* ===== Base ===== */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  padding-top: 70px;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #222 !important;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #555;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #007acc;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #007acc;
+  background-color: transparent;
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 60px 0;
+}
+.alt {
+  background: #f9f9f9;
+}
+
+/* ===== Typography ===== */
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+}
+h3 {
+  font-weight: 300;
+  color: #000;
+  font-size: 28px;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+/* ===== About Section ===== */
+.contact-icons {
+  margin-top: 15px;
+  padding: 0;
+}
+.contact-icons li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.contact-icons a {
+  color: #555;
+  font-size: 1.8rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.contact-icons i.ai {
+  font-size: 1.7rem;
+  vertical-align: middle;
+}
+.contact-icons a:hover {
+  color: #007acc;
+  transform: scale(1.15);
+}
+
+/* ===== CV Entries ===== */
+.cv-entry {
+  margin-bottom: 24px;
+}
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cv-title {
+  font-size: 16px;
+}
+.cv-date {
+  font-size: 14px;
+  color: #777;
+  white-space: nowrap;
+}
+.cv-institution {
+  font-style: italic;
+  color: #555;
+  font-size: 15px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+.cv-details {
+  margin-top: 6px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+.cv-details li {
+  margin-bottom: 3px;
+}
+
+/* ===== Skills ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.skill-category {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.skill-category p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* ===== Publications ===== */
+.publications-list {
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.publications-list li {
+  margin-bottom: 12px;
+}
+.publications-list a {
+  color: #007acc;
+}
+.publications-list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contact ===== */
+.contact-list {
+  font-size: 16px;
+}
+.contact-list li {
+  margin-bottom: 8px;
+}
+.contact-list a {
+  color: #007acc;
+}
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+/* =========================================
+   Blog Styles (Substack-inspired)
+   ========================================= */
+
+/* Blog listing page */
+.blog-page {
+  padding: 80px 0 60px;
+}
+.blog-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.blog-header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+.blog-tagline {
+  font-size: 17px;
+  color: #777;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+.blog-posts {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Blog cards */
+.blog-card {
+  border-bottom: 1px solid #eee;
+  padding: 28px 0;
+}
+.blog-card:first-child {
+  padding-top: 0;
+}
+.blog-card:last-child {
+  border-bottom: none;
+}
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.blog-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-card-link:hover .blog-card-title {
+  color: #007acc;
+}
+.blog-card-date {
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 6px;
+}
+.blog-card-title {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 6px;
+  line-height: 1.3;
+  transition: color 0.2s;
+}
+.blog-card-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+.blog-card-excerpt {
+  font-size: 15px;
+  color: #777;
+  margin: 0;
+  line-height: 1.6;
+}
+.blog-card-tags {
+  margin-top: 10px;
+}
+.tag {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #666;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-right: 6px;
+}
+.blog-empty {
+  text-align: center;
+  padding: 60px 0;
+  color: #999;
+  font-size: 17px;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+/* Blog post page */
+.blog-post-page {
+  padding: 40px 0 60px;
+}
+.blog-post-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.back-to-blog {
+  display: inline-block;
+  color: #007acc;
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.back-to-blog:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+/* Post header */
+.post-header {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+.post-title {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+.post-meta {
+  font-size: 14px;
+  color: #999;
+}
+.post-meta time {
+  display: inline-block;
+}
+.post-tags {
+  margin-left: 12px;
+}
+.post-subtitle {
+  font-size: 19px;
+  color: #666;
+  font-family: "Lora", serif;
+  font-style: italic;
+  margin-top: 12px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Post body (Substack-like reading experience) */
+.post-body {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #333;
+}
+.post-body h2 {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.post-body h3 {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.post-body p {
+  margin-bottom: 20px;
+}
+.post-body a {
+  color: #007acc;
+  text-decoration: underline;
+  text-decoration-color: rgba(0,122,204,0.3);
+  text-underline-offset: 2px;
+}
+.post-body a:hover {
+  text-decoration-color: #007acc;
+}
+.post-body ul, .post-body ol {
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+.post-body li {
+  margin-bottom: 8px;
+}
+.post-body blockquote {
+  border-left: 3px solid #007acc;
+  padding-left: 20px;
+  margin: 28px 0;
+  color: #555;
+  font-style: italic;
+}
+.post-body code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.post-body pre {
+  background: #f5f5f5;
+  padding: 16px 20px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+.post-body pre code {
+  background: none;
+  padding: 0;
+}
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+.post-body strong {
+  font-weight: 600;
+  color: #222;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .cv-entry-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .cv-date {
+    font-size: 13px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .post-title {
+    font-size: 28px;
+  }
+  .post-body {
+    font-size: 17px;
+  }
+  .blog-card-title {
+    font-size: 20px;
+  }
+  .blog-header h1 {
+    font-size: 28px;
+  }
+}
