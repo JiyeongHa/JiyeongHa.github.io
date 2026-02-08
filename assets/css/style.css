@@ -145,6 +145,7 @@ h4 {
 
 /* ===== Publications ===== */
 .publications-list {
+  list-style-type: disc;
   padding-left: 24px;
   font-size: 14px;
   line-height: 1.7;
